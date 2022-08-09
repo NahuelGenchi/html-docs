@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, Arial;
+}
+
+:root {
+  font-size: 16px;
+  --bg-header-dark: rgb(35, 35, 35);
+  --bg-body-dark: rgb(60, 60, 60);
+  --color-dark: white;
+}
+
+body {
+  background-color: var(--bg-body-dark);
+  color: var(--color-dark);
+}

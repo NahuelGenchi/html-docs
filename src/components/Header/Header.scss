@@ -1,0 +1,30 @@
+.headerSection {
+  padding: 1rem;
+  border-bottom: 1px solid black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--bg-header-dark);
+
+  button {
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    outline: none;
+
+    ion-icon {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
