@@ -1,8 +1,8 @@
 import "./Welcome.scss";
 
-const Welcome = () => {
+const Welcome = (props) => {
   return(
-    <></>
+    <h1 style={props.style}>Hello, World!</h1>
   );
 };
 

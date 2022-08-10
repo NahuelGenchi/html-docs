@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Header, Welcome } from "./components";
+import { Header, Aside, Welcome } from "./components";
 
 import "./index.scss";
 
@@ -13,11 +13,18 @@ function App() {
       setToggleAside(false);
     };
   }
+
+  const changeDisplay = () => {
+    return {display: toggleAside === false ? "inherit" : "none"}
+  }
+
   return (
     <BrowserRouter>
       <Header changeToggleAside={changeToggleAside}/>
+      <Aside style={{display: toggleAside === false ? "none" : "block"}} />
       <Routes>
-        <Route path="/" element={<Welcome/>}/>
+        <Route path="/" element={<Welcome style={changeDisplay()}/>}/>
+        <Route path="/html" element={<Welcome style={changeDisplay()}/>}/>
       </Routes>
     </BrowserRouter>
   );

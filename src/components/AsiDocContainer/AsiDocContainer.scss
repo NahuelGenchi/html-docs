@@ -1,0 +1,29 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.asi-title {
+  font-weight: bold;
+}
+
+.asicont, .asicontItem {
+  padding: 1rem;
+  border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+.asicont {  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.asicontItem {
+  display: flex;
+  flex-direction: column;
+
+  .asicontSubItem {
+    margin-top: 1rem;
+  }
+}

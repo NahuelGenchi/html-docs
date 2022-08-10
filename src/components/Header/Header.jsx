@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Header.scss";
 
 const Header = (props) => {
@@ -5,7 +7,9 @@ const Header = (props) => {
     <header className="headerSection">
       <button onClick={props.changeToggleAside}><ion-icon name="menu-outline"></ion-icon></button>
       <div>
-        <span>HTML Docs</span>
+        <Link to={`/`}>
+          <span>HTML Docs</span>
+        </Link>
       </div>
     </header>
   );
