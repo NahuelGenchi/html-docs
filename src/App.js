@@ -21,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header changeToggleAside={changeToggleAside}/>
-      <Aside style={{display: toggleAside === false ? "none" : "block"}} />
+      <Aside style={{display: toggleAside === false ? "none" : "block"}} onClick={changeToggleAside} />
       <Routes>
         <Route path="/" element={<Welcome style={changeDisplay()}/>}/>
         <Route path="/html" element={<Welcome style={changeDisplay()}/>}/>

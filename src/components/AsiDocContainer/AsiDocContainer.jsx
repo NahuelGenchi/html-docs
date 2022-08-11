@@ -3,7 +3,7 @@ import { htmlData } from "../../html_api";
 
 import "./AsiDocContainer.scss";
 
-const AsiDocContainer = () => {
+const AsiDocContainer = (props) => {
   return (
     <>
       <Link to={`/${htmlData.title}`}>
@@ -18,7 +18,7 @@ const AsiDocContainer = () => {
             <span className="asi-title">{subitem.title.charAt(0).toUpperCase() + subitem.title.slice(1)}</span>
             {subitem.content.map((param, key2) => {
               return (
-                <Link to={`/html/${subitem.title}/${param.tag}`} key={key2} className="asicontSubItem">{param.tag}</Link>
+                <Link to={`/html/${subitem.title}/${param.tag}`} key={key2} onClick={props.onClick} className="asicontSubItem">{param.tag}</Link>
               );
             })}
           </div>
