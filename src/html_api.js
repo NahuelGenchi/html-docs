@@ -265,9 +265,114 @@ const elements = [
     description: "The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes."
   },
   {
-    tag: "input type='button'",
+    tag: 'input type="button"',
     title: "<input type='button'>",
     description: "<input> elements of type button are rendered as simple push buttons, which can be programmed to control custom functionality anywhere on a webpage as required when assigned an event handler function (typically for the click event)."
+  },
+  {
+    tag: 'input type="checkbox"',
+    title: "<input type='checkbox'>",
+    description: "<input> elements of type checkbox are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally this is a square but it may have rounded corners. A checkbox allows you to select single values for submission in a form (or not)."
+  },
+  {
+    tag: 'input type="color"',
+    title: "<input type='color'>",
+    description: "<input> elements of type color provide a user interface element that lets a user specify a color, either by using a visual color picker interface or by entering the color into a text field in #rrggbb hexadecimal format. Only simple colors (without alpha channel) are allowed though CSS colors has more formats, e.g. color names, functional notations and a hexadecimal format with an alpha channel. The element's presentation may vary substantially from one browser and/or platform to another—it might be a simple textual input that automatically validates to ensure that the color information is entered in the proper format, or a platform-standard color picker, or some kind of custom color picker window."
+  },
+  {
+    tag: 'input type="date"',
+    title: "<input type='date'>",
+    description: "<input> elements of type='date' create input fields that let the user enter a date, either with a textbox that validates the input or a special date picker interface. The resulting value includes the year, month, and day, but not the time. The time and datetime-local input types support time and date+time input."
+  },
+  {
+    tag: 'input type="datetime-local"',
+    title: "<input type='datetime-local'>",
+    description: "<input> elements of type datetime-local create input controls that let the user easily enter both a date and a time, including the year, month, and day as well as the time in hours and minutes."
+  },
+  {
+    tag: 'input type="email"',
+    title: "<input type='email'>",
+    description: "<input> elements of type email are used to let the user enter and edit an e-mail address, or, if the multiple attribute is specified, a list of e-mail addresses."
+  },
+  {
+    tag: 'input type="file"',
+    title: "<input type='file'>",
+    description: '<input> elements with type="file" let the user choose one or more files from their device storage. Once chosen, the files can be uploaded to a server using form submission, or manipulated using JavaScript code and the File API.'
+  },
+  {
+    tag: 'input type="hidden"',
+    title: '<input type="hidden">',
+    description: "<input> elements of type hidden let web developers include data that cannot be seen or modified by users when a form is submitted. For example, the ID of the content that is currently being ordered or edited, or a unique security token. Hidden inputs are completely invisible in the rendered page, and there is no way to make it visible in the page's content."
+  },
+  {
+    tag: 'input type="image"',
+    title: '<input type="image">',
+    description: "<input> elements of type image are used to create graphical submit buttons, i.e. submit buttons that take the form of an image rather than text."
+  },
+  {
+    tag: 'input type="month"',
+    title: '<input type="month">',
+    description: '<input> elements of type month create input fields that let the user enter a month and year allowing a month and year to be easily entered. The value is a string whose value is in the format "YYYY-MM", where YYYY is the four-digit year and MM is the month number.'
+  },
+  {
+    tag: 'input type="number"',
+    title: '<input type="number">',
+    description: "<input> elements of type number are used to let the user enter a number. They include built-in validation to reject non-numerical entries. The browser may opt to provide stepper arrows to let the user increase and decrease the value using their mouse or by tapping with a fingertip."
+  },
+  {
+    tag: 'input type="password"',
+    title: '<input type="password">',
+    description: '<input> elements of type password provide a way for the user to securely enter a password. The element is presented as a one-line plain text editor control in which the text is obscured so that it cannot be read, usually by replacing each character with a symbol such as the asterisk ("*") or a dot ("•"). This character will vary depending on the user agent and operating system.'
+  },
+  {
+    tag: 'input type="radio"',
+    title: '<input type="radio">',
+    description: '<input> elements of type radio are generally used in radio groups—collections of radio buttons describing a set of related options. Only one radio button in a given group can be selected at the same time. Radio buttons are typically rendered as small circles, which are filled or highlighted when selected.'
+  },
+  {
+    tag: 'input type="range"',
+    title: '<input type="range">',
+    description: "<input> elements of type range let the user specify a numeric value which must be no less than a given value, and no more than another given value. The precise value, however, is not considered important. This is typically represented using a slider or dial control rather than a text entry box like the number input type. Because this kind of widget is imprecise, it should only be used if the control's exact value isn't important."
+  },
+  {
+    tag: 'input type="reset"',
+    title: '<input type="reset">',
+    description: "<input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values."
+  },
+  {
+    tag: 'input type="search"',
+    title: '<input type="search">',
+    description: "<input> elements of type search are text fields designed for the user to enter search queries into. These are functionally identical to text inputs, but may be styled differently by the user agent."
+  },
+  {
+    tag: 'input type="submit"',
+    title: '<input type="submit">',
+    description: "<input> elements of type submit are rendered as buttons. When the click event occurs (typically because the user clicked the button), the user agent attempts to submit the form to the server."
+  },
+  {
+    tag: 'input type="tel"',
+    title: '<input type="tel">',
+    description: '<input> elements of type tel are used to let the user enter and edit a telephone number. Unlike <input type="email"> and <input type="url"> , the input value is not automatically validated to a particular format before the form can be submitted, because formats for telephone numbers vary so much around the world.'
+  },
+  {
+    tag: 'input type="text"',
+    title: '<input type="text">',
+    description: "<input> elements of type text create basic single-line text fields."
+  },
+  {
+    tag: 'input type="time"',
+    title: '<input type="time">',
+    description: "<input> elements of type time create input fields designed to let the user easily enter a time (hours and minutes, and optionally seconds). The control's user interface varies from browser to browser; see Browser compatibility for further details. In unsupported browsers, the control degrades gracefully to <input type='text'>."
+  },
+  {
+    tag: 'input type="url"',
+    title: '<input type="url">',
+    description: "<input> elements of type url are used to let the user enter and edit a URL."
+  },
+  {
+    tag: 'input type="week"',
+    title: '<input type="week">',
+    description: "<input> elements of type week create input fields allowing easy entry of a year plus the ISO 8601 week number during that year (i.e., week 1 to 52 or 53)."
   }
 ];
 
